@@ -13,8 +13,8 @@
   color: var(--text-color-grey);
 }
 
-/* index.html */
-/* header */
+/* different*/
+
 a {
   text-decoration: none;
 }
@@ -37,10 +37,20 @@ ul {
   padding: 0;
 }
 
+/* header */
 .container {
+  display: flex;
+  align-items: center;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: brown;
+}
+.navigation {
+  display: flex;
+  align-items: center;
 }
 .visually-hidden {
   position: absolute;
@@ -54,13 +64,18 @@ ul {
   clip-path: inset(50%);
   margin: -1px;
 }
-
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: chartreuse;
+}
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  background-color: cornflowerblue;
 }
 
 .header-logo {
@@ -70,13 +85,39 @@ ul {
   color: var(--btn-color-blue);
 }
 
+.header-list {
+  display: flex;
+  margin-left: 93px;
+  background-color: deeppink;
+}
+.header-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-color-grey);
+  background-color: darkgoldenrod;
+}
+.header-list .header-item:not(:last-child) {
+  margin-right: 50px;
+}
+.header-list-contacts {
+  display: flex;
+  margin-left: auto;
+}
+.header-list-contacts .header-item-contacts:not(:last-child) {
+  margin-right: 50px;
+}
+
 .header-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--header-color-black);
+  background-color: darkmagenta;
 }
+
 .header-link:hover,
 .header-link:focus,
 .header-link:active {
@@ -89,6 +130,7 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color-grey);
+  background-color: gold;
 }
 .header-link-tel:hover,
 .header-link-tel:focus,
@@ -96,13 +138,7 @@ ul {
   color: var(--btn-color-blue);
 }
 
-.header-item {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--text-color-grey);
-}
+/* .index.html */
 /* hero */
 .hero {
   background: var(--fon-background-grey);
@@ -224,6 +260,14 @@ ul {
 
 /* portfolio */
 /* filter */
+.container-content {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
 .filter-btn {
   font-family: inherit;
   font-weight: 500;
