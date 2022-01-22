@@ -55,6 +55,7 @@ ul {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  background-color: darkred;
 }
 .header-conteiner {
   display: flex;
@@ -148,6 +149,10 @@ ul {
 }
 
 .hero-title {
+  width: 696px;
+  margin: 0 auto;
+  padding-top: 200px;
+  padding-bottom: 280px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -157,6 +162,9 @@ ul {
   color: var(--header-color-white);
 }
 .btn {
+  display: inline-block;
+  width: 200px;
+  margin: 0 auto;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -242,17 +250,19 @@ ul {
   background-color: chocolate;
 }
 .container-content {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: cadetblue;
 }
 .filter-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 34px;
 }
 .filter-btn {
   margin-left: 8px;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  padding-bottom: 16px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -286,21 +296,25 @@ ul {
 }
 
 .content-title {
-  padding-top: 20px;
-  padding-left: 24px;
+  margin-top: 20px;
+  margin-bottom: 4px;
+  margin-left: 24px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--header-color-black);
+  background-color: blue;
 }
 
 .content-text {
-  padding-left: 24px;
+  margin-left: 24px;
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--text-color-grey);
+  background-color: darkgreen;
 }
 
 /* footer */
@@ -312,6 +326,8 @@ ul {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 60px;
+  padding-top: 60px;
   margin-left: auto;
   margin-right: auto;
   background-color: darkmagenta;
@@ -322,6 +338,10 @@ ul {
 .footer-address {
   font-style: normal;
 }
+.footer-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
 .footer-link:hover,
 .footer-link-address:hover,
 .footer-link:focus,
